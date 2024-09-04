@@ -1,0 +1,69 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "title": "Titulo Filme 1",
+      "description": "Descrição Filme 1",
+      "director": "Diretor Filme 1",
+      "image_src": "./src/assets/img/Image.png",
+      "image_alt": "Descrição Alternativa",
+      "gender": "Action",
+      "time_duration": "1h 30min",
+      "qtd_views": "1.5K",
+      "release_date": "2025-08-25",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "title": "pqwoejqwkjeqwk'lqwjeqwljke'",
+      "description": "Descrição Filme 1",
+      "director": "salkdjlaskdasl",
+      "image_src": "./src/assets/img/Image1.png",
+      "image_alt": "Descrição Alternativa 2",
+      "gender": "Adventure",
+      "time_duration": "1h 45min",
+      "qtd_views": "2K",
+      "release_date": "2021-02-02",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "title": "pqwoejqwkjeqwk'lqwjeqwljke'",
+      "description": "Descrição Filme 1",
+      "director": "salkdjlaskdasl",
+      "image_src": "./src/assets/img/Image2.png",
+      "image_alt": "Descrição Alternativa 2",
+      "gender": "Adventure",
+      "time_duration": "2h 10min",
+      "qtd_views": "1.8K",
+      "release_date": "2023-02-03",
+      "rating": 2.5
+    },
+    {
+      "id": 4,
+      "title": "pqwoejqwkjeqwk'lqwjeqwljke'",
+      "description": "Descrição Filme 1",
+      "director": "salkdjlaskdasl",
+      "image_src": "./src/assets/img/Image.png",
+      "image_alt": "Descrição Alternativa 2",
+      "gender": "Adventure",
+      "time_duration": "2h 10min",
+      "qtd_views": "1.8K",
+      "release_date": "2023-02-03",
+      "rating": 2.5
+    }, 
+    {
+      "id": 5,
+      "title": "pqwoejqwkjeqwk'lqwjeqwljke'",
+      "description": "Descrição Filme 1",
+      "director": "salkdjlaskdasl",
+      "image_src": "./src/assets/img/Image1.png",
+      "image_alt": "Descrição Alternativa 2",
+      "gender": "Adventure",
+      "time_duration": "2h 10min",
+      "qtd_views": "1.8K",
+      "release_date": "2023-02-03",
+      "rating": 2.5
+    }
+  ]
+}

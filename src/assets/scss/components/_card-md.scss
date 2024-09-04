@@ -1,0 +1,74 @@
+.card-md {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: calc(282px - 40px);
+    border-radius: 12px;
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+
+    img {
+        height: 244px;
+        height: 280px;
+        border-radius: 12px;
+    }
+
+    .info-only-views-rating-and-time, 
+    .info-only-views-and-time {
+        display: flex;
+        justify-content: space-between;
+
+        .duration,
+        .views {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 10px 6px 6px;
+            color: #999999;
+            background-color: #141414;
+            border-radius: 51px;
+            border: 1px solid #262626;
+        }
+
+        .duration p, 
+        .views p {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    .info-only-text-released {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #141414;
+        border: 1px solid #262626;
+        border-radius: 51px;
+
+        p {
+            color: #999999;
+            padding: 6px 10px 6px 6px;
+            margin: 0;
+        }
+    }
+
+    .info-only-views-rating-and-time {
+        .views {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+
+            .rating {
+                svg {
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
