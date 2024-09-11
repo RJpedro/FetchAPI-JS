@@ -1,6 +1,5 @@
 <script setup lang="ts">
-    import LeftArrow from '@/assets/icons/LeftArrow.vue';
-    import RightArrow from '@/assets/icons/RightArrow.vue';
+    import NavigationArea from '@/components/_navigation.vue';
 </script>
 
 <style>
@@ -10,13 +9,7 @@
 <template>
     <div class="title-area">
         <h2 class="title-text">{{title}}</h2>
-        <div class="navigation-area">
-            <div class="navigation-arrow"><LeftArrow /></div>
-            <div class="navigation-section">
-                <div v-for="n in qtd_sections" :class="`navigation-section-${n}`"></div>
-            </div>
-            <div class="navigation-arrow"><RightArrow /></div>
-        </div>
+        <NavigationArea :qtd_sections="qtd_sections" :have_arrows="have_arrows" />
     </div>
 </template>
 
@@ -24,7 +17,8 @@
     export default {
         props: {
             title: String,
-            qtd_sections: Number
+            qtd_sections: Number,
+            have_arrows: Boolean
         }
     }
 </script>

@@ -2,10 +2,10 @@
   "filmes": [
     {
       "id": 1,
-      "title": "Titulo Filme 1",
-      "description": "Descrição Filme 1",
+      "title": "Avengers : Endgame",
+      "description": "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.",
       "director": "Diretor Filme 1",
-      "image_src": "./src/assets/img/Image.png",
+      "image_src": "./src/assets/img/Image3.png",
       "image_alt": "Descrição Alternativa",
       "gender": "Action",
       "time_duration": "1h 30min",

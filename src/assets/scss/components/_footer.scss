@@ -1,0 +1,106 @@
+footer {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    margin-top: 150px;
+    background-color: #0F0F0F;
+    flex-wrap: wrap;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px;
+        margin-top: 50px;
+        padding: 0px 16px;
+        width: 100%;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            width: 50%;
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            a {
+                font-size: 18px;
+            }
+
+            .footer-social-icons {
+                display: flex;
+                gap: 14px;
+
+                svg {
+                    display: flex;
+                    padding: 16px;
+                    border-radius: 8px;
+                    background-color: #1A1A1A;
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 50px;
+        width: 1600px;
+        margin-bottom: 50px;
+        color: #606060;
+
+        .terms {
+            display: flex;
+            gap: 40px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #606060;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+
+        ul, .footer-info {
+            width: 1440px;
+            padding: 0 80px;
+        }
+
+        ul {
+            flex-direction: row;
+            padding: 0 50px;
+            margin-top: 100px;
+        }
+
+        .footer-info {
+            flex-direction: row;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    footer {
+        ul, .footer-info {
+            width: 1600px;
+            padding: 0 240px;
+        }
+    }
+}

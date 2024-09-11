@@ -4,41 +4,20 @@
 
     .title-text {
         color: white;
-        font-size: 38px; 
+        font-size: 24px; 
         font-weight: bold;
     }
+}
 
-    .navigation-area {
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        background-color: black; 
-        border-radius: 12px;
-        border: 1px solid #1F1F1F; 
-        height: 100%;
+@media screen and (min-width: 1440px) {
+    .title-area {
 
-        .navigation-arrow {
-            margin: 16px;
-            padding: 16px;
-            border-radius: 8px;
-            background-color: #1A1A1A;
-            cursor: pointer;
-        }
-
-        .navigation-section {
-            display: flex; 
-            gap: 4px;
-        
-            div {
-                &:first-child {
-                    background-color: red;
-                }
-
-                width: 23px; 
-                height: 4px; 
-                border-radius: 100px;
-                background-color: #232323;
-            }
+        .title-text {
+            font-size: 38px; 
         }
     }
+}
+
+@media screen and (min-width: 1920px) {
+
 }

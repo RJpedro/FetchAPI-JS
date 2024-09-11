@@ -1,4 +1,49 @@
-.filmes {
+section.section-films-area {
     display: flex; 
-    gap: 20px;
+    flex-direction: column; 
+    gap: 50px; 
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+
+    div.title-area p {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 116px; 
+        height: 50px;
+        position: absolute;
+        left: 50px; 
+        top: -40px; 
+        border-radius: 8px; 
+        color: #FFFFFF; 
+        background-color: #E50000; 
+
+        .title {
+            margin: 0px;
+        }
+    }
+
+    .section-films-div {
+        .film {
+            display: flex; 
+            gap: 20px;
+            overflow-x: hidden;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section.section-films-area {
+        border: 1px solid #1F1F1F;
+
+
+        .section-films-div {
+            padding: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
 }

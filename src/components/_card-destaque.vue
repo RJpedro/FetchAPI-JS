@@ -1,4 +1,9 @@
 <script setup lang="ts">
+    import NavigationArea from '@/components/_navigation.vue';
+    import PlayNowIcon from '@/assets/icons/PlayNowIcon.vue';
+    import PlusIcon from '@/assets/icons/PlusIcon.vue';
+    import LikeIcon from '@/assets/icons/LikeIcon.vue';
+    import SoundIcon from '@/assets/icons/SoundIcon.vue';
 </script>
 
 <style>
@@ -6,35 +11,22 @@
 </style>
 
 <template>
-    <article class="card-md">
+    <article class="card-destaque">
         <img :src="image_src" :alt="image_alt">
-        <div class="info-only-views-and-time" v-if="only_views_and_time">
-            <div class="duration">
-                <ClockIcon />
-                <p>{{time_duration}}</p>
+        <div class="info">
+            <h1 class="title">{{ title }}</h1>
+            <p class="description">{{ description }}</p>
+            <div class="buttons-area">
+                <div>
+                    <button><PlayNowIcon /> Play Now</button>
+                </div>
+                <div>
+                    <button><PlusIcon /> </button>
+                    <button><LikeIcon /></button>
+                    <button><SoundIcon /></button>
+                </div>
             </div>
-            <div class="views">
-                <EyesIcon />
-                <p>{{qtd_views}}</p>
-            </div>
-        </div>
-        <div class="info-only-text-released" v-if="only_text_released">
-            <p>{{`Release at ${formatDateToCustomFormat(release_date)}`}}</p>
-        </div>
-        <div class="info-only-views-rating-and-time" v-if="only_views_rating_and_time">
-            <div class="duration">
-                <ClockIcon />
-                <p>{{time_duration}}</p>
-            </div>
-            <div class="views">
-                <section class="rating">
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
-                </section>
-                <p>{{qtd_views}}</p>
-            </div>
+            <NavigationArea :qtd_sections="4" :have_arrows="false"/>
         </div>
     </article>
 </template>
@@ -44,13 +36,8 @@
         props: {
             image_src: String,
             image_alt: String,
-            time_duration: String,
-            qtd_views: String,
-            only_views_and_time: Boolean,
-            only_text_released: Boolean,
-            only_views_rating_and_time: Boolean,
+            title: String,
             description: String,
-            release_date: Date,
         }
     }
 </script>
